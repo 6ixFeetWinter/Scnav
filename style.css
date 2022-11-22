@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@600&display=swap');
+:root{
+    --default-font-color:#5F5F5F;
+    --default-orange-color:#F7931E;
+    --gradient-top:#febf58;
+    --gradient-bottom:#F7931E;
+    --clear-light-color:#FFF;
+    --light-color:#F7F7F7;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--default-font-color);
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--light-color);
+}
+a:active{
+    color: var(--light-color);
+}
+a:focus {
+    outline: none;
+}
+.sp{
+    display: none;
+}
+header{
+    position: fixed;
+    width: 20%;
+    top: 20%;
+    left: 7%;
+    z-index: 1;
+}
+h1{
+    cursor: pointer;
+}
+.pc li{
+    font-size: 2.0rem;
+    font-weight: 900;
+    margin: 30px 0;
+}
+.pc li a{
+    color: var(--default-orange-color);
+}
+.firstView{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+hgroup{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+.firstView h2{
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 0.8;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+}
+.firstView h4{
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.firstView-Button{
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(var(--gradient-top), var(--gradient-bottom));
+}
