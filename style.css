@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@600&display=swap');
 :root{
     --default-font-color:#5F5F5F;
+    --light-font-color: #B7B7B7;
     --default-orange-color:#F7931E;
     --gradient-top:#febf58;
     --gradient-bottom:#F7931E;
@@ -9,15 +10,21 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 *{
-    line-height: 1.8;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--default-font-color);
 }
 img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+video{
     width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -42,14 +49,15 @@ header{
     position: fixed;
     width: 20%;
     top: 20%;
-    left: 7%;
+    left: 10%;
     z-index: 1;
 }
 h1{
     cursor: pointer;
+    width: 80%;
 }
 .pc li{
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: 900;
     margin: 30px 0;
 }
@@ -72,7 +80,7 @@ hgroup{
 .firstView h2{
     font-size: 6vw;
     font-weight: 700;
-    line-height: 0.8;
+    line-height: 1.2;
     font-family: 'IBM Plex Sans JP', sans-serif;
 }
 .firstView h4{
@@ -95,4 +103,118 @@ hgroup{
     font-size: 1.5rem;
     font-weight: bold;
     background: linear-gradient(var(--gradient-top), var(--gradient-bottom));
+}
+.firstView-Button a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 150px;
+}
+.About{
+    padding: 150px 0;
+    width: 65%;
+    margin-left: 35%;
+}
+.section-title p{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.section-title h2{
+    font-size: 3.8vw;
+    line-height: 1.2;
+}
+.about-text{
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 100px 0;
+}
+.section-button{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(var(--gradient-top), var(--gradient-bottom));
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.section-button a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+.back{
+    background-color: var(--light-color);
+}
+.Scratch{
+    padding: 150px 0;
+    width: 65%;
+    margin-left: 35%;
+}
+.video00{
+    width: 80%;
+    padding: 50px 0;
+}
+.Scratch-text{
+    width: 55%;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.howto{
+    padding: 150px 0;
+    width: 65%;
+    margin-left: 35%;
+}
+.Howtoimage{
+    width: 80%;
+    height: 400px;
+    background-color: #A9D3F7;
+    text-align: center;
+    line-height: 400px;
+    color: #FFF;
+    margin: 50px 0;
+}
+.Steps{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.Steps li{
+    line-height: 2.2;
+}
+.aboutSteps{
+    padding: 50px 0;
+    width: 70%;
+}
+.aboutSteps li{
+    padding: 30px 0;
+}
+.aboutSteps h3{
+    position: relative;
+    font-size: 2.4rem;
+}
+.aboutSteps h3::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background-color: var(--light-font-color);
+}
+.aboutSteps p{
+    width: 82%;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+.final-button{
+    margin-left: 20%;
+}
+footer{
+    background-color: var(--light-color);
+}
+footer p{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 1.8rem;
+    font-weight: 200;
 }

@@ -7,19 +7,22 @@
     <title>Scnav | 当サイトについて</title>
     <link href="style.css" rel="stylesheet">
     <link href="background.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
 </head>
 <body>
     <main>
         <header>
             <h1>
-                <img src="images/logo/logo.svg" alt="スクナビのロゴ">
+                <a href="#">
+                <img src="images/LP/logo/logo.svg" alt="スクナビのロゴ">
+                </a>
             </h1>
             <div class="pc">
                 <nav>
                     <ul>
-                        <li><a href ="#">サイト概要</a></li>
-                        <li><a href="#">Scratchとは</a></li>
-                        <li><a href="#">当サイトの使い方</a></li>
+                        <li><a href ="#About">サイト概要</a></li>
+                        <li><a href="#Scratch">Scratchとは</a></li>
+                        <li><a href="#howto">当サイトの使い方</a></li>
                     </ul>
                 </nav>
             </div>
@@ -57,6 +60,81 @@
             </div>
             <!--ここまで-->
         </section>
+        <section class="About" id="About">
+            <div class="section-title">
+                <p>About</p>
+                <h2>当サイトについて</h2>
+            </div>
+            <p class="about-text">
+                当サイトは、子ども向けプログラミングソフトScratchを使った<br>
+                プログラミングのテキストサイトです。<br>
+                子どものデジタル表現をもっと自由に、もっと楽しくする<br>
+                情報を発信していきます。
+            </p>
+            <p class="section-button"><a href="#">テキストを見る</a></p>
+        </section>
+        <div class="back">
+        <section class="Scratch" id="Scratch">
+            <div class="section-title">
+                <p>About Scratch</p>
+                <h2>Scratchとは？</h2>
+            </div>
+            <p class="video00">
+                <video src="images/LP/movie/Scnav00.mp4" autoplay muted loop playsinline></video>
+            </p>
+            <p class="Scratch-text">
+                Scratchとは、小中学校のプログラミング必修化に伴い
+                学校での使用例も多いビジュアルプログラミング言語です。
+                プログラミングと聞くと難しい単語をパソコンに打ち込む
+                イメージがありますが、Scratchはカラフルなブロックを
+                繋げて行くだけでプログラミングすることができます。
+            </p>
+        </section>
+        </div>
+        <section class="howto" id="#howto">
+            <div class="section-title">
+                <p>How to use</p>
+                <h2>当サイトの使い方</h2>
+            </div>
+            <p class="Howtoimage">
+                コーディングしたページの動画
+            </p>
+            <ul class="Steps">
+                <li>１  好きなテキストを探す</li>
+                <li>２  テキストを見ながらゲームを作成</li>
+                <li>３  遊んでみる！</li>
+            </ul>
+            <ul class="aboutSteps">
+                <li>
+                    <section>
+                        <h3>1 - 好きなテキストを探す</h3>
+                        <p>
+                            レベル毎に分かれたテキストから好きなものを選んでください。数字が大きくなるにつれて難易度が難しくなっていきます。初めての方はまずは”レベル０”から初めて見てください。
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3>2 - テキストを見ながらゲームを作成</h3>
+                        <p>
+                            選んだテキストを見ながらゲームを作成してみましょう。テキスト通りにプログラミングすれば簡単にゲームを作れます。完成した後は完成ボタンを押してマークをつけましょう。
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3>3 - 遊んでみる！</h3>
+                        <p>
+                            完成したら遊んでみよう。その中でいいアイディアが思いついたらどんどんアレンジしてみましょう。テキストの終わりがゲームの完成ではないのでどんどんアレンジを加えてオリジナルの作品にしよう。
+                        </p>
+                    </section>
+                </li>
+            </ul>
+            <p class="section-button final-button"><a href="#">テキストを見る</a></p>
+        </section>
     </main>
+    <footer>
+        <p><small>© 2022 スクナビ</small></p>
+    </footer>
 </body>
 </html>

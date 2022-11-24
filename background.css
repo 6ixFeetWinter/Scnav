@@ -25,6 +25,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -10;
+    background-color: #F7F7F7;
 }
 
 .circles li{
