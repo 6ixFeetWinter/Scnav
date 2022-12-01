@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@600&display=swap');
+:root{
+    --default-font-color:#5F5F5F;
+    --light-font-color: #B7B7B7;
+    --default-orange-color:#F7931E;
+    --gradient-top:#febf58;
+    --gradient-bottom:#F7931E;
+    --clear-light-color:#FFF;
+    --light-color:#F7F7F7;
+    --border-color: #CECECE;
+    --level0-color:#FFD35D;
+    --level0-button-color:#F7CA55;
+    --level1-color:#78C733;
+    --level1-button-color: ;
+    --level2-color:#3232EF;
+    --level3-color:#EF3939;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--default-font-color);
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+video{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--default-font-color);
+}
+a:active{
+    color: var(--default-font-color);
+}
+a:focus {
+    outline: none;
+}
+a:hover{
+    opacity: .5;
+}
+header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 8% 0 8%;
+    background-color: var(--clear-light-color);
+    position: fixed;
+    z-index: 1;
+}
+header::after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: var(--clear-light-color);
+    left: 0;
+    bottom: -10px;
+    box-shadow: 0 5px 5px var(--border-color);
+}
+header h1{
+    width: 170px;
+}
+header ul{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+header li{
+    font-size: 1.8rem;
+}
+.contentTxet{
+    position: absolute;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-size: 4.8rem;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contents{
+    padding-top: 100px;
+    width: 95%;
+    margin: 0 auto;
+}
+.title{
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+.levelNum{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 3rem;
+    color: var(--light-color);
+    margin-right: 10px;
+}
+.level h2{
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+.level p{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+.level0{
+    background-color: var(--level0-color);
+}
+.level1{
+    background-color: var(--level1-color);
+}
+.level2{
+    background-color: var(--level2-color);
+}
+.level3{
+    background-color: var(--level3-color);
+}
+.flex{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.item{
+    width: 350px;
+    position: relative;
+    padding-bottom: 150px;
+    box-shadow: 0 0 10px var(--light-font-color);
+}
+.info{
+    padding: 15px;
+}
+.info h3{
+    font-size: 2.5rem;
+}
+.tags{
+    margin-top: 10px;
+    display: flex;
+    font-size: 1.4rem;
+}
+.page{
+    border: solid 1px var(--light-font-color);
+    padding: 3px 10px;
+    border-radius: 25px;
+}
+.block{
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.blockLevel0{
+    color: #CCB169;
+    background-color: #FFE7A8;
+}
+.blockLevel1{
+    color: #579323;
+    background-color: #A9EA70;
+}
+.blockLevel2{
+    color: #3939BC;
+    background-color: #7979F5;
+}
+.blockLevel3{
+    color: #9A2C2C;
+    background-color: #F57B7B;
+}
+.textButton{
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    bottom: 10px;
+    padding:  10px 0;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.text0{
+    background-color: var(--level0-button-color);
+}
+.text1{
+    background-color: var(--level1-color);
+}
+.text2{
+    background-color: var(--level2-color);
+}
+.text3{
+    background-color: var(--level3-color);
+}
+.textButton a,.textButton a:active,.textButton a:focus{
+    color: var(--light-color);
+}
+footer{
+    margin-top: 100px;
+    background-color: var(--light-color);
+}
+footer p{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 1.8rem;
+    font-weight: 200;
+}

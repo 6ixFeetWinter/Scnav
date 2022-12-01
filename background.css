@@ -7,7 +7,7 @@
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1050px) rotate(720deg);
         opacity: 0.5;
         border-radius: 40%;
     }
@@ -16,6 +16,10 @@
 .area{
     width: 100%;
     height: 100%;
+}
+.area2{
+    width: 100%;
+    height: 40vh;
 }
 .circles{
     position: absolute;
@@ -28,7 +32,7 @@
     background-color: #F7F7F7;
 }
 
-.circles li{
+.circles li,.circles2 li{
     position: absolute;
     display: block;
     list-style: none;
@@ -39,14 +43,25 @@
     background-color: #FBB03B;
 }
 
-.circles li:nth-child(1){
+.circles2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    z-index: -10;
+    background-color: #F7F7F7;
+}
+
+.circles li:nth-child(1),.circles2 li:nth-child(1){
     left: 25%;
     width: 100px;
     height: 100px;
     animation-delay: 0s;
     background-color: #78C733;
 }
-.circles li:nth-child(2){
+.circles li:nth-child(2),.circles2 li:nth-child(2){
     left: 10%;
     width: 40px;
     height: 40px;
@@ -55,7 +70,7 @@
     background-color: #943BFB;
 }
 
-.circles li:nth-child(3){
+.circles li:nth-child(3),.circles2 li:nth-child(3){
     left: 60%;
     width: 80px;
     height: 80px;
@@ -63,7 +78,7 @@
     background-color: #F43BFB;
 }
 
-.circles li:nth-child(4){
+.circles li:nth-child(4),.circles2 li:nth-child(4){
     left: 40%;
     width: 50px;
     height: 50px;
@@ -72,7 +87,7 @@
     background-color: #6AABE8;
 }
 
-.circles li:nth-child(5){
+.circles li:nth-child(5),.circles2 li:nth-child(5){
     left: 45%;
     width: 80px;
     height: 80px;
@@ -80,7 +95,7 @@
     background-color: #EF3939;
 }
 
-.circles li:nth-child(6){
+.circles li:nth-child(6).circles2 li:nth-child(6){
     left: 75%;
     width: 130px;
     height: 130px;
@@ -88,7 +103,7 @@
     background-color: #FF9B9B;
 }
 
-.circles li:nth-child(7){
+.circles li:nth-child(7),.circles2 li:nth-child(7){
     left: 35%;
     width: 100px;
     height: 100px;
@@ -96,7 +111,7 @@
     background-color: #0062FF;
 }
 
-.circles li:nth-child(8){
+.circles li:nth-child(8).circles2 li:nth-child(8){
     left: 50%;
     width: 40px;
     height: 40px;
@@ -105,7 +120,7 @@
     background-color: #FBB03B;
 }
 
-.circles li:nth-child(9){
+.circles li:nth-child(9),.circles2 li:nth-child(9){
     left: 10%;
     width: 180px;
     height: 180px;
@@ -114,7 +129,7 @@
     background-color: #FFEB00;
 }
 
-.circles li:nth-child(10){
+.circles li:nth-child(10), .circles2 li:nth-child(10){
     left: 85%;
     width: 100px;
     height: 100px;
@@ -122,5 +137,6 @@
     animation-duration: 11s;
     background-color: #0A00FF;
 }
-
-
+@media screen {
+    
+}

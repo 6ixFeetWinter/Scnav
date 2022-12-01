@@ -42,6 +42,9 @@ a:active{
 a:focus {
     outline: none;
 }
+a:hover{
+    opacity: .5;
+}
 .sp{
     display: none;
 }
@@ -217,4 +220,81 @@ footer p{
     padding: 50px 0;
     font-size: 1.8rem;
     font-weight: 200;
+}
+@media screen and (max-width: 960px){
+.pc{
+    display: none;
+}
+.sp{
+    display: block;
+}
+header{
+    display: flex;
+}
+.menuWapper{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.menuline{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.menuline span{
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.menuline span{
+    overflow: hidden;
+}
+.menuline:before, .menuline:after{
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--default-font-color);
+}
+.menuline:before{
+    content: "";
+    transition: 0.3s;
+}
+.menuline:after{
+    content: "";
+    transform: translateY(12px);
+    width: 30px;
+    left: 0px;
+    transition: 0.3s;
+}
+.menuText{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.active::before{
+    transform: rotate(45deg);
+    width: 25px;
+}
+.active::after{
+    transform: rotate(-45deg);
+    width: 25px;
+    left: 0;
+}
 }
