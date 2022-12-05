@@ -251,6 +251,7 @@ header h1{
     height: 50px;
     right: 35%;
     bottom: -5px;
+    z-index: 15;
 }
 .menuline{
     display: block;
@@ -286,6 +287,7 @@ header h1{
     left: 0;
     bottom: 0;
     background-color: var(--default-font-color);
+    transition: background-color 0.5s;
 }
 .menuline:before{
     content: "";
@@ -303,15 +305,25 @@ header h1{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--default-font-color);
+    transition: color 0.5s;
 }
 .active::before{
     transform: rotate(45deg);
     width: 25px;
+    background-color: var(--clear-light-color);
+    transition: background-color 0.5s;
 }
 .active::after{
     transform: rotate(-45deg);
     width: 25px;
     left: 0;
+    background-color: var(--clear-light-color);
+    transition: background-color 0.5s;
+}
+.ternColor{
+    color: var(--clear-light-color);
+    transition: color 0.5s;
 }
 hgroup{
     width: 100%;
@@ -328,7 +340,7 @@ hgroup{
     text-align: center;
 }
 .firstView h4{
-    font-size: 4vw;
+    font-size: 3rem;
     font-weight: 200;
     text-align: center;
 }
@@ -343,21 +355,22 @@ hgroup{
     position: relative;
     font-size: 4vw;
     font-weight: lighter;
+    padding-bottom: 20px;
 }
 .section-title p::before{
     content: "";
-    width: 13%;
-    height: 3px;
+    width: 10%;
+    height: 4px;
     background-color: var(--default-orange-color);
     position: absolute;
-    bottom: -30%;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
 }
 .section-title h2{
     font-family: 'IBM Plex Sans JP', sans-serif;
     font-size: 8vw;
-    margin-top: 4%;
+    padding-top: 20px;
 }
 .about-text{
     font-size: 3.1vw;
@@ -368,12 +381,12 @@ hgroup{
 }
 .section-button{
     margin: 0 auto;
-    font-size: 4vw;
-    width: 160px;
-    height: 40px;
+    font-size: 2rem;
+    width: 200px;
+    height: 60px;
 }
 .section-button a{
-    line-height: 40px;
+    line-height: 60px;
 }
 .video00{
     width: 90%;
@@ -382,7 +395,7 @@ hgroup{
 .Scratch-text{
     width: 70%;
     margin: 0 auto;
-    font-size: 3.3vw;
+    font-size: 2rem;
 }
 .Howtoimage{
     margin: 50px auto;
@@ -390,7 +403,7 @@ hgroup{
     height: 200px;
 }
 .Steps{
-    font-size: 4vw;
+    font-size: 3rem;
     padding-left: 10%;
 }
 .aboutSteps{
@@ -398,7 +411,7 @@ hgroup{
     margin: 0 auto;
 }
 .aboutSteps h3{
-    font-size: 5vw;
+    font-size: 3rem;
     padding-left: 10px;
 }
 .aboutSteps h3::after{
@@ -406,7 +419,88 @@ hgroup{
 }
 .aboutSteps p{
     width: 95%;
-    font-size: 4vw;
+    font-size: 2rem;
     margin: 0 auto;
 }
+.menuActive{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 10;
+    background-color: rgba(40,40,40,.8);
+}
+.menuActive ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35%;
+}
+.menuActive li{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 2rem;
+}
+.menuActive li a{
+    color: var(--clear-light-color);
+}
+}
+@media screen and (max-width: 415px){
+    .pc ul{
+        width: 60%;
+    }
+    .pc li{
+        font-size: 1.5rem;
+    }
+    .firstView h4{
+        font-size: 1.6rem;
+        font-weight: 200;
+        text-align: center;
+    }
+    .firstView-Button{
+        width: 100px;
+        height: 100px;
+        font-size: 1.2rem;
+    }
+    .about-text{
+        line-height: 2;
+    }
+    .firstView-Button a{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    .section-title p{
+        padding-bottom: 8px;
+    }
+    .section-title h2{
+        padding-top: 8px;
+    }
+    .section-button{
+        width: 150px;
+        height: 40px;
+    }
+    .section-button a{
+        line-height: 40px;
+        font-size: 1.4rem;
+    }
+    .Scratch-text{
+        font-size: 1.6rem;
+    }
+    .Steps{
+        font-size: 1.8rem;
+    }
+    .aboutSteps h3{
+        font-size: 1.8rem;
+        padding-left: 20px;
+    }
+    .aboutSteps p{
+        font-size: 1.4rem;
+    }
 }

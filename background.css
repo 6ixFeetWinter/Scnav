@@ -137,6 +137,103 @@
     animation-duration: 11s;
     background-color: #0A00FF;
 }
-@media screen {
+@media screen and (max-width: 960px){
+    .circles li,.circles2 li{
+        width: 50px;
+        height: 50px;
+    }
+    .circles li:nth-child(1),.circles2 li:nth-child(1){
+        width: 80px;
+        height: 80px;
+    }
+    .circles li:nth-child(2),.circles2 li:nth-child(2){
+        width: 20px;
+        height: 20px;
+    }
+    .circles li:nth-child(3),.circles2 li:nth-child(3){
+        width: 60px;
+        height: 60px;
+    }
+    .circles li:nth-child(4),.circles2 li:nth-child(4){
+        width: 30px;
+        height: 30px;
+    }
     
+    .circles li:nth-child(5),.circles2 li:nth-child(5){
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circles li:nth-child(6).circles2 li:nth-child(6){
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circles li:nth-child(7),.circles2 li:nth-child(7){
+        width: 90px;
+        height: 90px;
+    }
+    
+    .circles li:nth-child(8).circles2 li:nth-child(8){
+        width: 20px;
+        height: 20px;
+    }
+    .circles li:nth-child(9),.circles2 li:nth-child(9){
+        width: 130px;
+        height: 130px;
+    }
+    .circles li:nth-child(10), .circles2 li:nth-child(10){
+        width: 80px;
+        height: 80px;
+    } 
+}
+@media screen and (max-width: 415px){
+    .circles li,.circles2 li{
+        width: 30px;
+        height: 30px;
+    }
+    .circles li:nth-child(1),.circles2 li:nth-child(1){
+        width: 60px;
+        height: 60px;
+    }
+    .circles li:nth-child(2),.circles2 li:nth-child(2){
+        width: 10px;
+        height: 10px;
+    }
+    .circles li:nth-child(3),.circles2 li:nth-child(3){
+        width: 40px;
+        height: 40px;
+    }
+    .circles li:nth-child(4),.circles2 li:nth-child(4){
+        width: 20px;
+        height: 20px;
+    }
+    
+    .circles li:nth-child(5),.circles2 li:nth-child(5){
+        width: 40px;
+        height: 40px;
+    }
+    
+    .circles li:nth-child(6).circles2 li:nth-child(6){
+        width: 80px;
+        height: 80px;
+    }
+    
+    .circles li:nth-child(7),.circles2 li:nth-child(7){
+        width: 70px;
+        height: 70px;
+    }
+    
+    .circles li:nth-child(8).circles2 li:nth-child(8){
+        width: 10px;
+        height: 10px;
+    }
+    .circles li:nth-child(9),.circles2 li:nth-child(9){
+        width: 100px;
+        height: 100px;
+    }
+    .circles li:nth-child(10), .circles2 li:nth-child(10){
+        width: 60px;
+        height: 60px;
+    } 
 }
