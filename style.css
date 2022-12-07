@@ -9,6 +9,14 @@
     --light-color:#F7F7F7;
     --border-color: #CECECE;
 }
+@keyframes anime{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -225,7 +233,9 @@ footer p{
 @media screen and (max-width: 960px){
 .pc{
     display: none;
+    animation: anime 0.5s reverse;
 }
+
 .sp{
     display: block;
 }
@@ -287,7 +297,7 @@ header h1{
     left: 0;
     bottom: 0;
     background-color: var(--default-font-color);
-    transition: background-color 0.5s;
+    transition: transform 0.3s;
 }
 .menuline:before{
     content: "";
@@ -298,7 +308,7 @@ header h1{
     transform: translateY(12px);
     width: 30px;
     left: 0px;
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 .menuText{
     position: absolute;
@@ -312,14 +322,14 @@ header h1{
     transform: rotate(45deg);
     width: 25px;
     background-color: var(--clear-light-color);
-    transition: background-color 0.5s;
+    transition: transform 0.3s;
 }
 .active::after{
     transform: rotate(-45deg);
     width: 25px;
     left: 0;
     background-color: var(--clear-light-color);
-    transition: background-color 0.5s;
+    transition: transform 0.3s;
 }
 .ternColor{
     color: var(--clear-light-color);
@@ -431,6 +441,7 @@ hgroup{
     top:0;
     z-index: 10;
     background-color: rgba(40,40,40,.8);
+    animation: anime 0.5s;
 }
 .menuActive ul{
     position: absolute;
@@ -450,7 +461,7 @@ hgroup{
     color: var(--clear-light-color);
 }
 }
-@media screen and (max-width: 415px){
+@media screen and (max-width: 429px){
     .pc ul{
         width: 60%;
     }

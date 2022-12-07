@@ -138,12 +138,12 @@ header li{
 .flex{
     margin-top: 20px;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 .item{
-    width: 350px;
+    width: 300px;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
     box-shadow: 0 0 10px var(--light-font-color);
 }
 .info{
@@ -217,4 +217,90 @@ footer p{
     padding: 50px 0;
     font-size: 1.8rem;
     font-weight: 200;
+}
+@media screen and (max-width: 960px){
+    header{
+        padding: 10px 5% 0 5%;
+    }
+    header h1{
+        width: 140px;
+    }
+    header ul{
+        width: 280px;
+    }
+    header li{
+        font-size: 1.6rem;
+    }
+    .contents{
+        padding-top: 0;
+    }
+    .contentTxet{
+        font-size: 4.8rem;
+        top: 19%;
+    }
+    .flex{
+        gap: 20px;
+    }
+    .item{
+        width: calc(100%/3);
+    }
+}
+@media screen and (max-width: 429px){
+    header{
+        padding: 10px 5% 0 5%;
+    }
+    header h1{
+        width: 100px;
+    }
+    header ul{
+        width: 200px;
+    }
+    header li{
+        font-size: 1.2rem;
+    }
+    .contentTxet{
+        font-size: 2.8rem;
+        top: 20%;
+    }
+    .levelNum{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .level h2{
+        font-size: 2.2rem;
+    }
+    .level p{
+        font-size: 1rem;
+    }
+    .flex{
+        display: block;
+    }
+    .item{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 20px auto;
+        box-shadow: 0 0 7px var(--light-font-color);
+    }
+    .thumb{
+        width: 45%;
+    }
+    .info{
+        padding: 5px;
+        margin-left: 3px;
+    }
+    .info h3{
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    .tags{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .textButton{
+        width: 50%;
+        font-size: 1.4rem;
+        padding: 3px 10px;
+    }
 }
