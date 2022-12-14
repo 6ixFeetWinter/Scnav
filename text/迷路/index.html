@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷路ゲーム | スクナビ</title>
+    <link href="../text.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico">
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="../../Content/index.html"><img src="../../images/LP/logo/logo.svg" alt="スクナビのロゴ"></a></h1>
+        </header>
+        <section class="content">
+            <h2 class="textTitle">Scratchで迷路ゲームを作ろう！</h2>
+           
+            <!--ここから-->
+            <section class="page" id="page1">
+                <h3>もくじ</h3>
+                <nav>
+                    <ul class="list">
+                        <li><a href="#page2">0 - 今回つくるもの</a></li>
+                        <li><a href="#page3">1 - ゲームの作り方</a></li>
+                        <li><a href="#page4">2 - 迷路をつくろう</a></li>
+                        <li><a href="#page5">3 - キャラクターを動かそう</a></li>
+                        <li><a href="#page6">5 - 壁を判定できるようにしよう！</a></li>
+                        <li><a href="#page7">6 - ゴールを作ろう</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page2">
+                <h3>今回つくるもの</h3>
+                <p class="video">
+                    <video src="../../images/迷路/movie00.mp4" autoplay muted loop playsinline></video>
+                </p>
+            </section>
+            <!--ここまで-->
+            
+            <!--ここから-->
+            <section class="page" id="page3">
+                <h3>ゲームのつくりかた</h3>
+                <div>
+                <p class="full"><img src="../../images/迷路/image01.webp" alt="ゲームの作り方の画像１"></p>
+                <p>画面上部の”つくる”ボタンを押して</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image02.webp" alt="ゲームの作り方の画像2"></p>
+                <p>この画面が出てきたら成功！</p>
+                </div>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page4">
+                <h3>迷路をつくろう</h3>
+                <div>
+                <p class="full"><img src="../../images/迷路/image03.webp" alt="迷路の作り方の画像１"></p>
+                <p>右下の”はいけいをえらぶ”から</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image04.webp" alt="迷路の作り方の画像2"></p>
+                <p>“Blue Sky 2”を選ぼう</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image05.webp" alt="迷路の作り方の画像3"></p>
+                <p>画面がこうなったら準備OK！</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image06.webp" alt="迷路の作り方の画像4"></p>
+                <p>①ステージを選択して<br>
+                    ②左上の”背景”ボタンをクリック</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image07.webp" alt="迷路の作り方の画像5"></p>
+                <p>この画面が出てきたら成功！</p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image09.webp" alt="迷路の作り方の画像6"></p>
+                <p>今開いた画面で、<br>
+                    ①左のマーク群から消しゴムマークを選択し、<br>
+                    ②太さを”１００”に変更しよう<br>
+                    これで迷路をつくる準備は完了！</p>
+                </div>
+                <div>
+                <p class="harf"><img src="../../images/迷路/image10.webp" alt="迷路の作り方の画像7"></p>
+                <p>↑みたいに好きな迷路を描いてみよう！<br>
+                    迷路ができたら次はキャラクターの操作を制作しよう</p>
+                </div>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page5">
+                <h3>キャラクターを動かそう</h3>
+                <div>
+                <p class="harf"><img src="../../images/迷路/image11.webp" alt="キャラクターを動かそうの画像1"></p>
+                <p>今回は、今画面に映っているこの猫を主人公としてゲームを作るよ！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image12.webp" alt="キャラクターを動かそうの画像2"></p>
+                <p>まずは<br>
+                    ①猫の大きさを30にして迷路の大きさに合わせよう<br>
+                    ②猫をクリックした状態で動かしてスタート地点に置こう！
+                </p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/迷路/image13.webp" alt="キャラクターを動かそうの画像3"></p>
+                <p>猫をスタート地点に置けたかな？<br>
+                    猫をスタート地点に置くことができたら、次は上の四つのブロックを
+                    持ってこよう！<br>
+                    ブロックの探しかたがわからない時はゲームの作りかたを見てみよう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image14.webp" alt="キャラクターを動かそうの画像4"></p>
+                <p>４つのブロックを持って来ることができたらこのように組合せよう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image15.webp" alt="キャラクターを動かそうの画像5"></p>
+                <p>さっき組み合わせたブロックの中身を変更しよう！<br>
+                    "<span>スペース</span>"を"<span>みぎむきやじるし</span>"に、<br>
+                    x座標を１０ずつ変えるの"<span>10</span>"を"<span>5</span>"に変更しよう！<br>
+                    数字は半角英数じゃないと認識されないから注意してね！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image16.webp" alt="キャラクターを動かそうの画像6"></p>
+                <p>今編集したブロックを右クリックして”<span>ふくせい</span>”機能を使って複製しよう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image17.webp" alt="キャラクターを動かそうの画像7"></p>
+                <p>同じブロック群が二つできたかな？<br>
+                    できたら次に進もう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image18.webp" alt="キャラクターを動かそうの画像8"></p>
+                <p>ふくせい機能を使って複製した方の中身を<br>
+                    "<span>みぎむきやじるし</span>"から"<span>ひだりむきやじるし</span>"に<br>
+                    xざひょうを５ずつかえる"<span>5</span>"を"<span>-5(マイナス５)</span>"に変えよう！<br>
+                    マイナス５も半角じゃないと認識されないから注意してね！</p>
+                </div>
+                <div>
+                <p class="harf"><video src="../../images/迷路/movie01.mp4" autoplay muted loop playsinline></video></p>
+                <p>猫が左右に動くようになったかな？<br>
+                    旗マークを押すと元の位置に戻ってくるよ！<br>
+                    次は上下の動きを作ろう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image19.webp" alt="キャラクターを動かそうの画像9"></p>
+                <p>新しく２つのブロックを持ってこよう！<br>
+                    今回は"<span>Y</span>"ざひょうブロックだから注意してね！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image20.webp" alt="キャラクターを動かそうの画像10"></p>
+                <p>"<span>スペース</span>"キーから"<span>うわむきやじるし</span>"キーに<br>
+                    yざひょうを10ずつかえるの"<span>10</span>"を"<span>5</span>"に変えよう！</p>
+                </div>
+                <div>
+                <p class="min"><img src="../../images/迷路/image21.webp" alt="キャラクターを動かそうの画像11"></p>
+                <p>
+                    今編集したブロックを”ふくせい”して、<br>
+                    "<span>うわむきやじるし</span>"を"<span>したむきやじるし</span>"に<br>
+                    yざひょうを5ずつかえるの"<span>5</span>"を"<span>-5(マイナス5)</span>"に変えよう！
+                </p>
+                </div>
+                <div>
+                <p class="harf"><video src="../../images/迷路/movie02.mp4" autoplay muted loop playsinline></video></p>
+                <p>上下にも動けるようになったかな？<br>
+                    動けるようになったら次に進もう！</p>
+                </div>
+            </section>
+            <!--ここまで-->
+
+<!--ここから-->
+<section class="page" id="page6">
+<h3>壁を判定できるようにしよう！</h3>
+<div>
+<p class="harf"><img src="../../images/迷路/image22.webp" alt="壁を判定できるようにしようの画像１"></p>
+<p>今回は”色判定”を使って壁を作っていくよ！<br>
+    水色の部分を全部壁として判定するために、
+    まずは上の２つのブロックをとってこよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image23.webp" alt="壁を判定できるようにしようの画像2"></p>
+<p>２つのブロックを取ってきたら<br>
+    ①色にふれたブロックの色をクリック<br>
+    ②そして出てきたスポイトボタンをクリック<br>
+    次は色を取得しに行くよ！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image24.webp" alt="壁を判定できるようにしようの画像3"></p>
+<p>スポイトボタンをクリックしたら右のエディター画面の取得したい色
+    の部分にカーソルを移動！<br>
+    そうすると色のデータを取って来ることができるよ！</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/image25.webp" alt="壁を判定できるようにしようの画像4"></p>
+<p>色をとって来ることができたらこのように組み合わせよう！</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/image26.webp" alt="壁を判定できるようにしようの画像5"></p>
+<p>組み合わせることができたら、４つになるように複製して、
+    それぞれをキーが押された時ブロックの下につけよう！</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/Wall.webp" alt="壁を判定できるようにしようの画像6"></p>
+<p>壁判定の作り方は、上の画像のように<br>
+    進む力を”０”にすることで、壁を再現するよ！</p>
+</div>
+<div>
+<p class="min"><img src="../../images/迷路/image27.webp" alt="壁を判定できるようにしようの画像7"></p>
+<p>上の画像で説明したように、組み合わせて０になるように<br>
+    ブロックを入れていくよ！この場合は 5 - 5が０だから -5 を入れるよ！</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/image28.webp" alt="壁を判定できるようにしようの画像8"></p>
+<p>さっきの要領で４つ全てに０になる組み合わせを入れてみよう！</p>
+</div>
+<div>
+<p class="harf"><video src="../../images/迷路/movie03.mp4" autoplay muted loop playsinline></video></p>
+<p>これで壁判定を作ることができました！</p>
+</div>
+</section>
+<!--ここまで-->
+
+<!--ここから-->
+<section class="page" id="page7">
+<h3>ゴールを作ろう！</h3>
+<div>
+<p class="full"><img src="../../images/迷路/image29.webp" alt="ゴールを作ろうの画像１"></p>
+<p>ゴールの目印を作っていくよ！<br>
+    右下の”スプライトをえらぶ”を押してみよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image30.webp" alt="ゴールを作ろうの画像2"></p>
+<p>今回は”Crystal（クリスタル）”を使用するよ！<br>
+    見つけたらクリックしてみよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image31.webp" alt="ゴールを作ろうの画像3"></p>
+<p>画面にクリスタルが出てきたら成功！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image32.webp" alt="ゴールを作ろうの画像4"></p>
+<p>次はクリスタルをゴールの位置に設置するよ！<br>
+    ①クリスタルをゴールの位置に移動<br>
+    ②２つのブロックをこのように組み合わせよう！<br>
+    順番がとても大事だから間違わないように気をつけよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image33.webp" alt="ゴールを作ろうの画像5"></p>
+<p>次はゴールの文字を作っていくよ！<br>
+    右下の”えがく”を押してみよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image34.webp" alt="ゴールを作ろうの画像6"></p>
+<p>えがくの画面が出てきたかな？出てきたら、<br>
+    ①左のアイコンから筆のアイコンを選択<br>
+    ②色を好きな色に変更<br>
+    ③太さをちょうどいい太さにしよう！今回は５０にするよ</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image35.webp" alt="ゴールを作ろうの画像7"></p>
+<p>準備ができたらゴールの文字を書いてみよう！<br>
+    上手に描けたかな？</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image36.webp" alt="ゴールを作ろうの画像8"></p>
+<p>文字が書けたら文字のスプライトのコードに移動して
+    ３つのブロックを持ってこよう！</p>
+</div>
+<div>
+<p class="min"><img src="../../images/迷路/image37.webp" alt="ゴールを作ろうの画像9"></p>
+<p>持って来ることが出来たらこのように組み合わせよう！</p>
+</div>
+<div>
+<p class="min"><img src="../../images/迷路/image38.webp" alt="ゴールを作ろうの画像10"></p>
+<p>組み合わせることが出来たらxざひょう、yざひょうの
+    数値をどちらも"<span>0</span>"にしよう！
+    これで画面の中心に文字を持って来ることができるよ！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image39.webp" alt="ゴールを作ろうの画像11"></p>
+<p>ここまで出来たら<br>
+    ①緑の旗マークを押してみよう！ゴールの文字が消えたかな？<br>
+    ②クリスタルをクリックしてクリスタルのコードに移動しよう</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/image40.webp" alt="ゴールを作ろうの画像12"></p>
+<p>新しく上記の３つのブロックを用意しよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image41.webp" alt="ゴールを作ろうの画像13"></p>
+<p>持って来ることが出来たらこのように組み合わせよう！</p>
+</div>
+<div>
+<p class="min"><img src="../../images/迷路/image42.webp" alt="ゴールを作ろうの画像14"></p>
+<p>組み合わせることが出来たら<br>
+    "<span>マウスポインター</span>"にふれたの部分を<br>
+    "<span>スプライト1</span>"に変更しよう！</p>
+</div>
+<div>
+<p class="full"><img src="../../images/迷路/image43.webp" alt="ゴールを作ろうの画像15"></p>
+<p>変更することが出来たらゴールの文字のコードに移動しよう！</p>
+</div>
+<div>
+<p class="harf"><img src="../../images/迷路/image44.webp" alt="ゴールを作ろうの画像16"></p>
+<p>ゴールの文字のコードに
+    この３つのブロックを追加しよう！</p>
+</div>
+<div>
+<p class="min"><img src="../../images/迷路/image45.webp" alt="ゴールを作ろうの画像17"></p>
+<p>３つのブロックをこのように組み合わせることが出来たら<br>
+    実際にネコがクリスタルの文字に触れた時にゴールの文字が出てくるか
+    テストしてみよう！</p>
+</div>
+<div>
+<p class="harf"><video src="../../images/迷路/movie00.mp4" autoplay muted loop playsinline></video></p>
+<p>これで今回のゲームは完成！<br>
+    もっと工夫したい場合は、<br>
+    ①ネコやクリスタルのイラストを変更する<br>
+    ②制限時間をつける<br>
+    などに挑戦してみよう！</p>
+</div>
+</section>
+<!--ここまで-->
+</section>
+</main>
+<footer><small>© 2022 スクナビ</small></footer>
+</body>
+</html>
