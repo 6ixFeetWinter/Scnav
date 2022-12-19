@@ -342,6 +342,9 @@ hgroup{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.firstView{
+    height: 100svh;
+}
 .firstView h2{
     font-size: 9vw;
     font-weight: 700;
