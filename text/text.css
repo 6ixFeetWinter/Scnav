@@ -157,7 +157,7 @@ footer{
 }
 @media screen and (max-width: 429px){
     *{
-        line-height: 1.6;
+        line-height: 1.8;
     }
     main{
         font-size: 1.4rem;

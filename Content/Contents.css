@@ -97,8 +97,7 @@ header li{
     transform: translate(-50%,-50%);
 }
 .contents{
-    padding-top: 100px;
-    width: 95%;
+    width: 960px;
     margin: 0 auto;
 }
 .title{
