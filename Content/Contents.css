@@ -239,6 +239,9 @@ footer p{
     header li{
         font-size: 1.6rem;
     }
+    .contents{
+        width: 95%;
+    }
     header::after{
         box-shadow: 0 3px 3px var(--border-color);
     }
@@ -275,9 +278,6 @@ footer p{
     .contentTxet{
         font-size: 2.8rem;
         top: 20%;
-    }
-    .contents{
-        width: 95%;
     }
     .levelNum{
         width: 40px;
