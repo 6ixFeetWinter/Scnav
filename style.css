@@ -69,7 +69,7 @@ a:hover{
     opacity: 0;
 }
 .load p{
-    width: 15%;
+    width: clamp(150px,15%,800px);
     height: auto;
 }
 .up,.up1,.up2{
