@@ -39,7 +39,8 @@
                 </div>
                 <div class="flex">
                 <!--記事-->
-                <section class="item">
+                <section class="item L1">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/アカウント作成/thumb.webp" alt="アカウント登録の画像">
                     </p>
@@ -53,7 +54,8 @@
                 </section>
                 <!--ここまで-->
                 <!--記事-->
-                <section class="item">
+                <section class="item L2">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/迷路/thumb.webp" alt="迷路ゲームの画像">
                     </p>
@@ -79,7 +81,8 @@
                 </div>
                 <div class="flex">
                 <!--記事-->
-                <section class="item">
+                <section class="item L3">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/おちもの/thumb.webp" alt="おちものゲームの画像">
                     </p>
@@ -94,7 +97,8 @@
                 </section>
                 <!--ここまで-->
                 <!--記事-->
-                <section class="item">
+                <section class="item L4">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/かけっこ/thumb.jpg" alt="かけっこゲームの画像">
                     </p>
@@ -109,7 +113,8 @@
                 </section>
                 <!--ここまで-->
                 <!--記事-->
-                <section class="item">
+                <section class="item L5">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/ピンポン/thumb.jpg" alt="ピンポンゲームの画像">
                     </p>
@@ -136,7 +141,8 @@
                 </div>
                 <div class="flex">
                 <!--記事-->
-                <section class="item">
+                <section class="item L6">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/シューティング/thumb.webp" alt="シューティングゲームの画像">
                     </p>
@@ -151,8 +157,9 @@
                 </section>
                 <!--ここまで-->
                 <!--記事-->
-                <section class="item">
+                <section class="item L7">
                     <p class="thumb">
+                    <div class="icon lock"></div>
                     <img src="../images/アクション/thumb.webp" alt="アクションゲームの画像">
                     </p>
                     <div class="info">
@@ -166,7 +173,8 @@
                 </section>
                 <!--ここまで-->
                 <!--記事-->
-                <section class="item">
+                <section class="item L8">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/迷路/thumb.webp" alt="迷路ゲームの画像">
                     </p>
@@ -192,7 +200,8 @@
                 </div>
                 <div class="flex">
                 <!--記事-->
-                <section class="item">
+                <section class="item L9">
+                    <div class="icon lock"></div>
                     <p class="thumb">
                     <img src="../images/迷路/thumb.webp" alt="迷路ゲームの画像">
                     </p>
@@ -214,5 +223,14 @@
     <footer>
         <p><small>© 2022 スクナビ</small></p>
     </footer>
+    <script>
+        for(let key in localStorage){
+            const index = key;
+            const item = localStorage.getItem(key);
+            if(item == 1){
+            document.querySelector('.'+index+' .icon').classList.add('unlock');
+            }
+        }
+    </script>
 </body>
 </html>

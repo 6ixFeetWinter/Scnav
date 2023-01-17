@@ -150,6 +150,7 @@ header li{
     padding-bottom: 120px;
     box-shadow: 0 0 10px var(--light-font-color);
     border-radius: 3px;
+    position: relative;
 }
 .thumb img{
     border-radius: 3px;
@@ -225,6 +226,24 @@ footer p{
     padding: 50px 0;
     font-size: 1.8rem;
     font-weight: 200;
+}
+.icon{
+    position: absolute;
+    display: inline-block;
+    top: 2%;
+    left: 1%;
+    width: 40px;
+    height: 40px;
+}
+.lock{
+    background-image: url(../images/LP/icon/lock.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.unlock{
+    background-image: url(../images/LP/icon/unlock.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media screen and (max-width: 960px){
     header{
@@ -319,5 +338,9 @@ footer p{
         width: 50%;
         font-size: 1.4rem;
         padding: 3px 10px;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
     }
 }
