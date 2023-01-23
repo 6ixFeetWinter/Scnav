@@ -264,6 +264,9 @@ footer p{
 .sp{
     display: block;
 }
+.load{
+    height: 100svh;
+}
 header{
     display: flex;
     width: 100%;
