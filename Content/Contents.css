@@ -345,3 +345,11 @@ footer p{
         height: 30px;
     }
 }
+@media screen and (max-width: 361px){
+    .info h3{
+        font-size: 1.5rem;
+    }
+    .tags{
+        font-size: 0.8rem;
+    }
+}
