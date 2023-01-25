@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D迷路ゲーム | スクナビ</title>
+    <link href="../text.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico">
+    <meta name="keywords" content="スクナビ　Scnav Scratch Scratchテキスト プログラミング　プログラミング教育">
+    <meta name="description" content="スクナビは小学生・中学生のデジタル表現を応援するプログラミング教育サイトです。Scratchでのゲーム作りを通してプログラミングを学べるように様々なテキストを提供しています。">
+    <meta property="og:title" content="スクナビ | Scnav">
+    <meta property="og:description" content="スクナビは小学生・中学生のデジタル表現を応援するプログラミング教育サイトです。Scratchでのゲーム作りを通してプログラミングを学べるように様々なテキストを提供しています。">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="../../images/LP/icon/apple-touch-icon.png">
+    <meta name="theme-color" content="#F7931E">
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="../../Content/index.html"><img src="../../images/LP/logo/logo.svg" alt="スクナビのロゴ"></a></h1>
+        </header>
+        <section class="content">
+            <h2 class="textTitle">Scratchで<ruby><rb>3D迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>ゲームを<ruby><rb>作</rb><rp>（</rp><rt>つく</rt><rp>）</rp></ruby>ろう！</h2>
+           
+            <!--ここから-->
+            <section class="page" id="page1">
+                <h3>もくじ</h3>
+                <nav>
+                    <ul class="list">
+                        <li><a href="#page2">0 - <ruby><rb>今回</rb><rp>（</rp><rt>こんかい</rt><rp>）</rp></ruby>つくるもの</a></li>
+                        <li><a href="#page3">1 - <ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>をつくろう</a></li>
+                        <li><a href="#page4">2 - プレイヤーをつくろう</a></li>
+                        <li><a href="#page5">3 - ゴールをつくろう</a></li>
+                        <li><a href="#page6">4 - <ruby><rb>視界</rb><rp>（</rp><rt>しかい</rt><rp>）</rp></ruby>をつくろう</a></li>
+                        <li><a href="#page7">5 - <ruby><rb>壁</rb><rp>（</rp><rt>かべ</rt><rp>）</rp></ruby>をつくろう</a></li>
+                        <li><a href="#page8">6 - <ruby><rb>仕上</rb><rp>（</rp><rt>しあ</rt><rp>）</rp></ruby>げをしよう</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page2">
+                <h3><ruby><rb>今回</rb><rp>（</rp><rt>こんかい</rt><rp>）</rp></ruby>つくるもの</h3>
+                <div>
+                <p class="video">
+                    <video src="../../images/3Dmaze/video00.mp4" autoplay muted loop playsinline></video>
+                </p>
+                </div>
+                <div>
+                <p class="full"><img src="../../images/3Dmaze/remix.webp" alt="リミックス推奨！"></p>
+                <p><ruby><rb>今回</rb><rp>（</rp><rt>こんかい</rt><rp>）</rp></ruby>はイラストを<ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>くよ!<br>
+                リミックスして<ruby><rb>使用</rb><rp>（</rp><rt>しよう</rt><rp>）</rp></ruby>する<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>は<a href="https://scratch.mit.edu/projects/792052026">コチラ</a>をクリックしてね！</p>
+                </div>
+            </section>
+            <!--ここまで-->
+            
+            <!--ここから-->
+            <section class="page" id="page3">
+                <h3><ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>をつくろう</h3>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image00.webp" alt="迷路をつくろう１"></p>
+                    <p><ruby><rb>設計図</rb><rp>（</rp><rt>せっけいず</rt><rp>）</rp></ruby>となる<ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>を<ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>くよ！<br>
+                        スプライトをえがこう！</p>
+                    </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image01.webp" alt="迷路をつくろう2"></p>
+                    <p>こんなふうに<ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>が<ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>けたらOK!<br>
+                        <ruby><rb>壁</rb><rp>（</rp><rt>かべ</rt><rp>）</rp></ruby>の<ruby><rb>間隔</rb><rp>（</rp><rt>かんかく</rt><rp>）</rp></ruby>を<ruby><rb>広</rb><rp>（</rp><rt>ひろ</rt><rp>）</rp></ruby>くとるとうまくいくよ！</p>
+                    </div>
+
+
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image02.webp" alt="迷路をつくろう3"></p>
+                    <p><ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>が<ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>けたらこのようにプログラミングしよう！</p>
+                </div>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page4">
+                <h3>プレイヤーをつくろう</h3>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image03.webp" alt="プレイヤーをつくろう１"></p>
+                    <p>つぎはプレイヤーを<ruby><rb>描</rb><rp>（</rp><rt>えが</rt><rp>）</rp></ruby>くよ！</p>
+                </div>
+                <div>
+                    <p class="harf"><img src="../../images/3Dmaze/image04.webp" alt="プレイヤーをつくろう2"></p>
+                    <p><ruby><rb>小</rb><rp>（</rp><rt>ち</rt><rp>）</rp></ruby>いさい<ruby><rb>丸</rb><rp>（</rp><rt>まる</rt><rp>）</rp></ruby>でOK!</p>
+                </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image05.webp" alt="プレイヤーをつくろう3"></p>
+                    <P><ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>けたら、スタート<ruby><rb>位置</rb><rp>（</rp><rt>いち</rt><rp>）</rp></ruby>にくるようにプログラムしよう！</P>
+                </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image06.webp" alt="プレイヤーをつくろう4"></p>
+                    <p><ruby><rb>動</rb><rp>（</rp><rt>うご</rt><rp>）</rp></ruby>けるようにするよ！<br>
+                        このようにプログラミングしよう！</p>
+                </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image07.webp" alt="プレイヤーをつくろう5"></p>
+                    <p><ruby><rb>上下</rb><rp>（</rp><rt>じょうげ</rt><rp>）</rp></ruby>の<ruby><rb>動</rb><rp>（</rp><rt>うご</rt><rp>）</rp></ruby>きを<ruby><rb>加</rb><rp>（</rp><rt>くわえ</rt><rp>）</rp></ruby>えるよ！<br>
+                        まずはこのようにプログラムしよう！</p>
+                </div>
+                <div>
+                    <p class="min"><img src="../../images/3Dmaze/image08.webp" alt="プレイヤーをつくろう6"></p>
+                    <p>できたら、もしなら<ruby><rb>部分</rb><rp>（</rp><rt>ぶぶん</rt><rp>）</rp></ruby>をコピーしてこのように<ruby><rb>数値</rb><rp>（</rp><rt>すうち</rt><rp>）</rp></ruby>を<ruby><rb>変更</rb><rp>（</rp><rt>へんこう</rt><rp>）</rp></ruby>しよう！</p>
+                </div>
+                <div>
+                    <p class="video">
+                        <video src="../../images/3Dmaze/video01.mp4" autoplay muted loop playsinline></video>
+                    </p>
+                    <p>こんなふうに<ruby><rb>動</rb><rp>（</rp><rt>うご</rt><rp>）</rp></ruby>けたらOK!</p>
+                </div>
+            </section>
+            <!--ここまで-->
+
+            <!--ここから-->
+            <section class="page" id="page5">
+                <h3>ゴールをつくろう</h3>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image09.webp" alt="ゴールをつくろう1"></p>
+                    <p>つぎはゴールを<ruby><rb>作</rb><rp>（</rp><rt>つく</rt><rp>）</rp></ruby>るよ！</p>
+                </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image10.webp" alt="ゴールをつくろう2"></p>
+                    <p>ゴールに<ruby><rb>収</rb><rp>（</rp><rt>おさ</rt><rp>）</rp></ruby>まる<ruby><rb>丸</rb><rp>（</rp><rt>まる</rt><rp>）</rp></ruby>を<ruby><rb>描</rb><rp>（</rp><rt>えが</rt><rp>）</rp></ruby>こう！</p>
+                </div>
+                <div>
+                    <p class="full"><img src="../../images/3Dmaze/image11.webp" alt="ゴールをつくろう3"></p>
+                    <p>ゴールの<ruby><rb>位置</rb><rp>（</rp><rt>いち</rt><rp>）</rp></ruby>にくるようにプログラムして<br>
+                        プレイヤーに<ruby><rb>触</rb><rp>（</rp><rt>ふ</rt><rp>）</rp></ruby>れたらメッセージを<ruby><rb>送</rb><rp>（</rp><rt>おく</rt><rp>）</rp></ruby>るようにしよう！</p>
+                </div>
+
+            </section>
+            <!--ここまで-->
+
+<!--ここから-->
+<section class="page" id="page6">
+<h3><ruby><rb>視界</rb><rp>（</rp><rt>しかい</rt><rp>）</rp></ruby>をつくろう</h3>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image12.webp" alt="視界をつくろう1"></p>
+    <p>３D<ruby><rb>迷路</rb><rp>（</rp><rt>めいろ</rt><rp>）</rp></ruby>を<ruby><rb>作</rb><rp>（</rp><rt>つく</rt><rp>）</rp></ruby>るプログラムをつくるよ！<br>
+    <ruby><rb>新</rb><rp>（</rp><rt>あたら</rt><rp>）</rp></ruby>しく”<span><ruby><rb>視界</rb><rp>（</rp><rt>しかい</rt><rp>）</rp></ruby>を<ruby><rb>調</rb><rp>（</rp><rt>しら</rt><rp>）</rp></ruby>べる</span>”というメッセージをつくろう！</p>
+</div>
+<div>
+    <p class="min"><img src="../../images/3Dmaze/image13.webp" alt="視界をつくろう2"></p>
+    <p><ruby><rb>作</rb><rp>（</rp><rt>つく</rt><rp>）</rp></ruby>ったメッセージをプレイヤーの<ruby><rb>動</rb><rp>（</rp><rt>うご</rt><rp>）</rp></ruby>きのプログラムに<ruby><rb>組</rb><rp>（</rp><rt>く</rt><rp>）</rp></ruby>み<ruby><rb>込</rb><rp>（</rp><rt>こ</rt><rp>）</rp></ruby>んでいこう！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image14.webp" alt="視界をつくろう3"></p>
+    <p>それができたら<ruby><rb>視界</rb><rp>（</rp><rt>しかい</rt><rp>）</rp></ruby>を<ruby><rb>調</rb><rp>（</rp><rt>しら</rt><rp>）</rp></ruby>べるスプライトをつくるよ！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image15.webp" alt="視界をつくろう4"></p>
+    <p><ruby><rb>小</rb><rp>（</rp><rt>ちい</rt><rp>）</rp></ruby>さい<ruby><rb>丸</rb><rp>（</rp><rt>まる</rt><rp>）</rp></ruby>を<ruby><rb>描</rb><rp>（</rp><rt>か</rt><rp>）</rp></ruby>こう！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image16.webp" alt="視界をつくろう5"></p>
+    <p>できたら<ruby><rb>幽霊効果</rb><rp>（</rp><rt>ゆうれいこうか</rt><rp>）</rp></ruby>を<ruby><rb>使</rb><rp>（</rp><rt>つか</rt><rp>）</rp></ruby>って<ruby><rb>透明</rb><rp>（</rp><rt>とうめい</rt><rp>）</rp></ruby>にするよ！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image17.webp" alt="視界をつくろう6"></p>
+    <p>つぎはブロック<ruby><rb>定義</rb><rp>（</rp><rt>ていぎ</rt><rp>）</rp></ruby>を<ruby><rb>使</rb><rp>（</rp><rt>つか</rt><rp>）</rp></ruby>ってブロックを<ruby><rb>作</rb><rp>（</rp><rt>つく</rt><rp>）</rp></ruby>るよ！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image18.webp" alt="視界をつくろう7"></p>
+    <p>２つの<ruby><rb>定義</rb><rp>（</rp><rt>ていぎ</rt><rp>）</rp></ruby>ブロックをつくろう！<br>
+    “<span>がめんをさいびょうがせずにじっこうする</span>”に<ruby><rb>絶対</rb><rp>（</rp><rt>ぜったい</rt><rp>）</rp></ruby>にチェックを入れよう！</p>
+</div>
+<div>
+    <p class="harf"><img src="../../images/3Dmaze/image19.webp" alt="視界をつくろう8"></p>
+    <p>できたら、メッセージをうけとった<ruby><rb>時</rb><rp>（</rp><rt>とき</rt><rp>）</rp></ruby>に<ruby><rb>定義</rb><rp>（</rp><rt>ていぎ</rt><rp>）</rp></ruby>ブロックをつけよう！</p>
+</div>
+<div>
+    <p class="harf"><img src="../../images/3Dmaze/image20.webp" alt="視界をつくろう9"></p>
+    <p>できたら”<span>リスト</span>”をつくるよ！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image21.webp" alt="視界をつくろう10"></p>
+    <p>プレイヤーと<ruby><rb>壁</rb><rp>（</rp><rt>かべ</rt><rp>）</rp></ruby>の<ruby><rb>距離</rb><rp>（</rp><rt>きょり</rt><rp>）</rp></ruby>を<ruby><rb>格納</rb><rp>（</rp><rt>かくのう</rt><rp>）</rp></ruby>するリストをつくろう！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image22.webp" alt="視界をつくろう11"></p>
+    <p>リストができたら、<ruby><rb>変数</rb><rp>（</rp><rt>へんすう</rt><rp>）</rp></ruby>を２つつくるよ！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image23.webp" alt="視界をつくろう12"></p>
+    <p>このように２つの<ruby><rb>変数</rb><rp>（</rp><rt>へんすう</rt><rp>）</rp></ruby>をつくろう！</p>
+</div>
+<div>
+    <p class="full"><img src="../../images/3Dmaze/Ex0.webp" alt="視界をつくろう13"></p>
+    <p>このような<ruby><rb>機能</rb><rp>（</rp><rt>きのう</rt><rp>）</rp></ruby>をプログラムするよ！</p>
+</div>
+<div>
+    <p class="harf"><img src="../../images/3Dmaze/image24.webp" alt="視界をつくろう13"></p>
+    <p><ruby><rb>視界を調べる</rb><rp>（</rp><rt>しかいをしらべる</rt><rp>）</rp></ruby><ruby><rb>定義</rb><rp>（</rp><rt>ていぎ</rt><rp>）</rp></ruby>ブロックのしたにこのようにブロックを<ruby><rb>組合</rb><rp>（</rp><rt>くみあわ</rt><rp>）</rp></ruby>せよう！</p>
+</div>
+
+</section>
+<!--ここまで-->
+
+<!--ここから-->
+<section class="page" id="page7">
+<h3><ruby><rb>壁</rb><rp>（</rp><rt>かべ</rt><rp>）</rp></ruby>をつくろう</h3>
+
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image25.webp" alt="壁をつくろう1"></p>
+    <p><ruby><rb>左下</rb><rp>（</rp><rt>ひだりした</rt><rp>）</rp></ruby>のアイコンから</p>
+</div>
+
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image26.webp" alt="壁をつくろう2"></p>
+    <p>“<span>ペン</span>”を<ruby><rb>選</rb><rp>（</rp><rt>えら</rt><rp>）</rp></ruby>ぼう！</p>
+</div>
+
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image27.webp" alt="壁をつくろう3"></p>
+    <p>ペン<ruby><rb>定義</rb><rp>（</rp><rt>ていぎ</rt><rp>）</rp></ruby>ブロックのしたにこのようにブロックを<ruby><rb>組合</rb><rp>（</rp><rt>くみあわ</rt><rp>）</rp></ruby>せよう！</p>
+</div>
+
+
+</section>
+<!--ここまで-->
+
+<!--ここから-->
+<section class="page" id="page8">
+<h3><ruby><rb>仕上</rb><rp>（</rp><rt>しあ</rt><rp>）</rp></ruby>げをしよう</h3>
+
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image28.webp" alt="仕上げをしよう1"></p>
+   <p>すべてのスプライトの<ruby><rb>幽霊効果</rb><rp>（</rp><rt>ゆうれいこうか</rt><rp>）</rp></ruby>を１００にしよう！</p>
+</div>
+
+<div>
+    <p class="full"><img src="../../images/3Dmaze/image29.webp" alt="仕上げをしよう2"></p>
+    <p><ruby><rb>後ろ姿</rb><rp>（</rp><rt>うしろすがた</rt><rp>）</rp></ruby>のスプライトを<ruby><rb>追加</rb><rp>（</rp><rt>ついか</rt><rp>）</rp></ruby>して、このようにブロックを<ruby><rb>組合</rb><rp>（</rp><rt>くみあわ</rt><rp>）</rp></ruby>せて、ゲーム<ruby><rb>完成</rb><rp>（</rp><rt>かんせい</rt><rp>）</rp></ruby>！</p>
+</div>
+
+<div>
+<p class="full last"><video src="../../images/3Dmaze/video00.mp4" autoplay muted loop playsinline></video></p>
+<p>これで<ruby><rb>今回</rb><rp>（</rp><rt>こんかい</rt><rp>）</rp></ruby>のゲームは<ruby><rb>完成</rb><rp>（</rp><rt>かんせい</rt><rp>）</rp></ruby>！<br>
+    もっと<ruby><rb>工夫</rb><rp>（</rp><rt>工夫</rt><rp>）</rp></ruby>したい<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>は、<br>
+    ①<ruby><rb>第二</rb><rp>（</rp><rt>だいに</rt><rp>）</rp></ruby>ステージをつくろう<br>
+    ②<ruby><rb>制限時間</rb><rp>（</rp><rt>せいげんじかん</rt><rp>）</rp></ruby>をつける<br>
+    などに<ruby><rb>挑戦</rb><rp>（</rp><rt>ちょうせん</rt><rp>）</rp></ruby>してみよう！</p>
+</div>
+</section>
+<!--ここまで-->
+
+
+
+
+
+</section>
+</main>
+<footer><small>© 2022 スクナビ</small></footer>
+<script>
+    const page = 'L9';
+</script>
+<script src="../../asset/asset.js"></script>
+</body>
+</html>
