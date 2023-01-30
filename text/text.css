@@ -138,7 +138,7 @@ span{
 footer{
     margin-top: 20px;
     width: 100%;
-    padding: 30px;
+    padding: 60px 0;
     text-align: center;
     background-color: var(--background-color);
 }
