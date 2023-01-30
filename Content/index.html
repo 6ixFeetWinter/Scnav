@@ -231,13 +231,15 @@
         <p><small>© 2022 スクナビ</small></p>
     </footer>
     <script>
-        for(let key in localStorage){
+        window.addEventListener('pageshow',function(){
+            for(let key in localStorage){
             const index = key;
             const item = localStorage.getItem(key);
             if(item == 1){
             document.querySelector('.'+index+' .icon').classList.add('unlock');
             }
         }
+        });
     </script>
 </body>
 </html>
