@@ -283,6 +283,11 @@ header h1{
     width: clamp(100px, 20% ,150px);
     margin-left: 7%;
 }
+.spmenuee a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .menuWapper{
     position: relative;
     width: 50px;

@@ -8,7 +8,7 @@ window.addEventListener('resize',function(){
 });
 window.addEventListener('scroll',function(){
     let scroll = window.scrollY;
-    if(scroll > targetpos - (winH / 2)){
+    if(scroll > targetpos - (winH / 3)){
         window.localStorage.setItem(page,1);
     }
 });
